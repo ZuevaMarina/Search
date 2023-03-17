@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 30px 0 30px;
+  font-family: "Bitter", sans-serif;
+  color: #ba55d3;
+  background-color: #fff0f5;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px 60px 30px;
+  border-radius: 10px;
+  background-color: #fffafa;
+}
+
+.form__label {
+  align-self: start;
+  font-size: 14px;
+}
+
+.form__controls {
+  position: relative;
+  display: flex;
+}
+
+.form__controls > * {
+  padding: 5px;
+}
+
+.search__input {
+  width: 100%;
+  border: 1px solid #ba55d3;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Bitter", sans-serif;
+}
+
+.submit {
+  width: 150px;
+  margin-left: 15px;
+  border: 1px solid #800080;
+  border-radius: 10px;
+  color: inherit;
+  background-color: #e6e6fa;
+}
+
+.submit:hover {
+  background-color: #e6e6fa;
+  color: #800080;
+}
+
+.submit:active {
+  background-color: #d8bfd8;
+}
+
+.results {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #e6e6fa;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.results__title {
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: thick double #800080;
+  font-size: 20px;
+}
+
+.results__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.not__found {
+  display: none;
+  color: #9932cc;
+}
+
+.error {
+  display: none;
+  color: #8b0000;
+  text-align: center;
+}
+
+.startStateResult {
+  display: none;
+}
+
+.error__message {
+  position: absolute;
+  font-weight: 600;
+  left: 5px;
+  bottom: -15px;
+  padding: 0;
+  font-size: 10px;
+  color: #8b0000;
+}
+
+.isShow {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.result {
+  display: flex;
+  padding: 10px;
+  background-color: #e6e6fa;
+  border-bottom: 1px solid #8b008b;
+}
+
+.user {
+  flex: 0 0 150px;
+  margin-right: 10px;
+}
+
+.user__name {
+  padding-bottom: 7px;
+  font-size: 16px;
+  color: #800080;
+}
+
+.user:hover > .user__name {
+  color: #9400d3;
+}
+
+.user__img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.repository {
+  padding-left: 10px;
+  border-left: 1px solid #8b008b;
+}
+
+.repository__name {
+  display: inline;
+  margin: 0 10px 0 0;
+  font-size: 18px;
+  color: #800080;
+  text-decoration: underline;
+}
+
+.repository__name:hover {
+  color: #9400d3;
+}
+
+.repository__description {
+  margin-top: 20px;
+  word-break: break-word;
+}
