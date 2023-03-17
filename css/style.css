@@ -9,8 +9,12 @@ body {
 }
 
 .container {
+  display: flex;
   max-width: 700px;
   margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .form {
@@ -21,6 +25,10 @@ body {
   padding: 20px 60px 30px;
   border-radius: 10px;
   background-color: #fffafa;
+}
+
+.isStart {
+  height: auto;
 }
 
 .form__label {

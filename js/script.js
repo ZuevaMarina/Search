@@ -5,6 +5,7 @@ const formControls = document.querySelector('.form__controls');
 const notFound = document.querySelector('.not__found');
 const serverError = document.querySelector('.error');
 const startStateResult = document.querySelector('.startStateResult');
+const container = document.querySelector('.container');
 
 const NUMBER_OF_RESULTS = 10;
 
@@ -46,6 +47,8 @@ function onInput(event) {
 
 function requestToGithub(searchString) {
     startStateResult.classList.add('isShow');
+    container.classList.add('isStart');
+    
     clearWorkSpace();
     search(searchString)
         .then(results => {
